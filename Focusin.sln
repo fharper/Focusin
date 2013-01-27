@@ -1,14 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Focusin", "Focusin\Focusin.csproj", "{06AB431E-E4CA-450D-9F0D-1873E220A314}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB7BBF15-EDE5-4B41-92D4-72DCA0E59E79}"
 	ProjectSection(SolutionItems) = preProject
 		Focusin.vsmdi = Focusin.vsmdi
 		Local.testsettings = Local.testsettings
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Focusin", "Focusin\Focusin.csproj", "{06AB431E-E4CA-450D-9F0D-1873E220A314}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution

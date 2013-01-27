@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
-  <App xmlns="" ProductID="{8b4f3af2-0308-4e01-8a07-e5743b25fba9}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Foxandxss" Description="Sample description" Publisher="Focusin">
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{3c9c5e96-2a4b-4f5e-9389-325f41cb36a8}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Foxandxss" Description="Sample description" Publisher="Focusin">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
-    <Capabilities>
-    </Capabilities>
+    <Capabilities></Capabilities>
     <Tasks>
-      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="FocusinToken" TaskName="_default">
