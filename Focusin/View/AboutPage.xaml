@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP7" 
+    x:Class="Focusin.View.AboutPage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"
+    DataContext="{Binding About, Source={StaticResource Locator}}"
+    shell:SystemTray.IsVisible="True" mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <!-- The standard header, with some tweaks -->
+    <StackPanel Margin="24,16,0,12">
+      <TextBlock x:Name="ApplicationName" Margin="-1,0,0,0"
+                 FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                 FontSize="{StaticResource PhoneFontSizeMedium}"/>
+      <TextBlock Text="{Binding About, Source={StaticResource LocStrings}}" Margin="-3,-10,0,0"
+                 FontFamily="{StaticResource PhoneFontFamilySemiLight}"
+                 FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
+    </StackPanel>
+
+    <!-- A stacked tile icon, version #, and copyright -->
+    <ScrollViewer Grid.Row="1">
+      <StackPanel>
+        <Border Background="{StaticResource PhoneAccentBrush}"
+                HorizontalAlignment="Center">
+          <Image Source="/Background.png" Stretch="None"/>
+        </Border>
+        <TextBlock x:Name="VersionTextBlock" HorizontalAlignment="Center" Margin="{StaticResource PhoneMargin}"/>
+        <TextBlock Margin="20,36,24,0"><Run Text="© 2011 Jesus Rodriguez (Foxandxss)"/></TextBlock>
+        <TextBlock Margin="20,12,0,0" Text="{Binding TimerSoundCopy, Source={StaticResource LocStrings}}"/>
+        <TextBlock Margin="20,12,24,0" Text="{Binding Support, Source={StaticResource LocStrings}}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonUp">
+        		        <cmd:EventToCommand Command="{Binding SupportCommand}"
+                                            CommandParameter="{Binding Text, ElementName=VersionTextBlock}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </TextBlock>
+        <TextBlock Margin="20,40,24,0" Text="{Binding ViewMore, Source={StaticResource LocStrings}}"
+                   Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonUp">
+        	        <cmd:EventToCommand Command="{Binding ViewMoreAppsCommand}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </TextBlock>
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,37 @@
+﻿<!-- Copyright (c) Adam Nathan.  All rights reserved.
+     By purchasing the book that this source code belongs to, you may use and modify this code for commercial and non-commercial applications, but you may not publish the source code.
+     THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES. -->
+<phone:PhoneApplicationPage 
+    x:Class="Focusin.InstructionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" shell:SystemTray.IsVisible="True" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="768" d:DesignWidth="480">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="FOCUSIN" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding Instructions, Source={StaticResource LocStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding InstructionsHeader, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding InstructionsListHeader, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList1, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList2, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList3, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList4, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList5, Source={StaticResource LocStrings}}" />
+            </StackPanel>          
+    </ScrollViewer>
+  </Grid>
+</phone:PhoneApplicationPage>
