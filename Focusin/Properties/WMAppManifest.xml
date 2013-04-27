@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{3c9c5e96-2a4b-4f5e-9389-325f41cb36a8}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Foxandxss" Description="Sample description" Publisher="Focusin">
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en" />
+  <Languages xmlns="">
+    <Language code="es-ES" />
+    <Language code="de-DE" />
+  </Languages>
+  <App xmlns="" ProductID="{b5eceae3-80e3-4301-a4ea-6a0622a64739}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Foxandxss" Description="Sample description" Publisher="Focusin" PublisherID="{a0e3ff88-b5b9-43b1-b64d-8805c295c58b}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities></Capabilities>
     <Tasks>
@@ -8,12 +13,23 @@
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="FocusinToken" TaskName="_default">
-        <TemplateType5>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+        <TemplateFlip>
+          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
           <Count>0</Count>
+          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
           <Title>Focusin</Title>
-        </TemplateType5>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
       </PrimaryToken>
     </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
   </App>
 </Deployment>
