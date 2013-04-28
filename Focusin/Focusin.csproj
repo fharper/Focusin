@@ -219,8 +219,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationIcon.png" />
-    <Content Include="Background.png" />
+    <Content Include="Content\Images\ApplicationIcon.png" />
+    <Content Include="Content\Images\Background.png" />
     <Resource Include="ColorPicker\checkerboard.png" />
     <Content Include="Content\Audio\endsound.wav" />
     <Content Include="Content\Fonts\pendule_ornamental.ttf" />

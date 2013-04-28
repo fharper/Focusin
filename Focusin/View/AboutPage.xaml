@@ -32,7 +32,7 @@
       <StackPanel>
         <Border Background="{StaticResource PhoneAccentBrush}"
                 HorizontalAlignment="Center">
-          <Image Source="/Background.png" Stretch="None"/>
+                    <Image Source="/Content/Images/Background.png" Stretch="None"/>
         </Border>
         <TextBlock x:Name="VersionTextBlock" HorizontalAlignment="Center" Margin="{StaticResource PhoneMargin}"/>
         <TextBlock Margin="20,36,24,0"><Run Text="Frédéric Harper"/></TextBlock>
