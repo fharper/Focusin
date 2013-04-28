@@ -35,10 +35,11 @@
           <Image Source="/Background.png" Stretch="None"/>
         </Border>
         <TextBlock x:Name="VersionTextBlock" HorizontalAlignment="Center" Margin="{StaticResource PhoneMargin}"/>
-        <TextBlock Margin="20,36,24,0"><Run Text="© 2011 Jesus Rodriguez (Foxandxss)"/></TextBlock>
+        <TextBlock Margin="20,36,24,0"><Run Text="Frédéric Harper"/></TextBlock>
+                <TextBlock Margin="20,12,0,0" Text="{Binding Resources.BasedSource, Source={StaticResource LocStrings}}"/>
                 <TextBlock Margin="20,12,0,0" Text="{Binding Resources.TimerSoundCopy, Source={StaticResource LocStrings}}"/>
-                <TextBlock Margin="20,12,24,0" Text="{Binding Resources.Support, Source={StaticResource LocStrings}}">
-            <i:Interaction.Triggers>
+        <TextBlock Margin="20,12,24,0" Text="{Binding Resources.Support, Source={StaticResource LocStrings}}">
+        <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseLeftButtonUp">
         		        <cmd:EventToCommand Command="{Binding SupportCommand}"
                                             CommandParameter="{Binding Text, ElementName=VersionTextBlock}"/>

@@ -123,6 +123,9 @@
   <data name="BackgroundColor" xml:space="preserve">
     <value>Hintergrundfarbe</value>
   </data>
+  <data name="BasedSource" xml:space="preserve">
+    <value>Ebaseerd op Jesus Rodriguez oorspronkelijke broncode</value>
+  </data>
   <data name="Break" xml:space="preserve">
     <value>Pause</value>
   </data>
@@ -199,7 +202,7 @@
     <value>beenden</value>
   </data>
   <data name="Support" xml:space="preserve">
-    <value>Support: foxandxss@gmail.com</value>
+    <value>Support (in het Engels): fharper@oocz.net</value>
   </data>
   <data name="TimerSoundCopy" xml:space="preserve">
     <value>Zeitgeber-Ton aus freesound.org @ Herbert Boland</value>
@@ -208,7 +211,7 @@
     <value>Version</value>
   </data>
   <data name="ViewMore" xml:space="preserve">
-    <value>mehr von Foxandxss sehen</value>
+    <value>mehr von Frédéric Harper sehen</value>
   </data>
   <data name="Work" xml:space="preserve">
     <value>Arbeit</value>

@@ -123,6 +123,9 @@
   <data name="BackgroundColor" xml:space="preserve">
     <value>Color de fondo</value>
   </data>
+  <data name="BasedSource" xml:space="preserve">
+    <value>Basado en Jesús Rodríguez código fuente inicial</value>
+  </data>
   <data name="Break" xml:space="preserve">
     <value>Pausa</value>
   </data>
@@ -199,7 +202,7 @@
     <value>parar</value>
   </data>
   <data name="Support" xml:space="preserve">
-    <value>Soporte: foxandxss@gmail.com</value>
+    <value>Soporte (en Inglés): fharper@oocz.net</value>
   </data>
   <data name="TimerSoundCopy" xml:space="preserve">
     <value>Sonidos de freesound.org @ Herbert Boland</value>
@@ -208,7 +211,7 @@
     <value>version</value>
   </data>
   <data name="ViewMore" xml:space="preserve">
-    <value>ver más de Foxandxss</value>
+    <value>ver más de Frédéric Harper</value>
   </data>
   <data name="Work" xml:space="preserve">
     <value>Trabajo</value>

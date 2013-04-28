@@ -88,6 +88,15 @@ namespace Focusin.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Based on Jesus Rodriguez initial source code.
+        /// </summary>
+        public static string BasedSource {
+            get {
+                return ResourceManager.GetString("BasedSource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Break.
         /// </summary>
         public static string Break {
@@ -313,7 +322,7 @@ namespace Focusin.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Support: foxandxss@gmail.com.
+        ///   Looks up a localized string similar to Support: fharper@oocz.net.
         /// </summary>
         public static string Support {
             get {
@@ -340,7 +349,7 @@ namespace Focusin.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to view more from Foxandxss.
+        ///   Looks up a localized string similar to view more from Frédéric Harper.
         /// </summary>
         public static string ViewMore {
             get {

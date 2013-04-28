@@ -204,7 +204,7 @@
     <value>stop</value>
   </data>
   <data name="Support" xml:space="preserve">
-    <value>Support: foxandxss@gmail.com</value>
+    <value>Support: fharper@oocz.net</value>
   </data>
   <data name="TimerSoundCopy" xml:space="preserve">
     <value>Timer Sound from freesound.org @ Herbert Boland</value>
@@ -213,9 +213,12 @@
     <value>version</value>
   </data>
   <data name="ViewMore" xml:space="preserve">
-    <value>view more from Foxandxss</value>
+    <value>view more from Frédéric Harper</value>
   </data>
   <data name="Work" xml:space="preserve">
     <value>Work</value>
+  </data>
+  <data name="BasedSource" xml:space="preserve">
+    <value>Based on Jesus Rodriguez initial source code</value>
   </data>
 </root>
