@@ -5,7 +5,7 @@
     <Language code="es-ES" />
     <Language code="de-DE" />
   </Languages>
-  <App xmlns="" ProductID="{b5eceae3-80e3-4301-a4ea-6a0622a64739}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Foxandxss" Description="Sample description" Publisher="Focusin" PublisherID="{a0e3ff88-b5b9-43b1-b64d-8805c295c58b}">
+  <App xmlns="" ProductID="{3128dbd1-8349-41e6-90e4-183b8336f789}" Title="Focusin" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Foxandxss" Description="Sample description" Publisher="Focusin" PublisherID="{32368b3f-b4ad-459d-9cb5-8214d79b2dac}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities></Capabilities>
     <Tasks>

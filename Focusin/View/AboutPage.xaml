@@ -22,7 +22,7 @@
       <TextBlock x:Name="ApplicationName" Margin="-1,0,0,0"
                  FontFamily="{StaticResource PhoneFontFamilySemiBold}"
                  FontSize="{StaticResource PhoneFontSizeMedium}"/>
-      <TextBlock Text="{Binding About, Source={StaticResource LocStrings}}" Margin="-3,-10,0,0"
+            <TextBlock Text="{Binding Resources.About, Source={StaticResource LocStrings}}" Margin="-3,-10,0,0"
                  FontFamily="{StaticResource PhoneFontFamilySemiLight}"
                  FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}"/>
     </StackPanel>
@@ -36,8 +36,8 @@
         </Border>
         <TextBlock x:Name="VersionTextBlock" HorizontalAlignment="Center" Margin="{StaticResource PhoneMargin}"/>
         <TextBlock Margin="20,36,24,0"><Run Text="© 2011 Jesus Rodriguez (Foxandxss)"/></TextBlock>
-        <TextBlock Margin="20,12,0,0" Text="{Binding TimerSoundCopy, Source={StaticResource LocStrings}}"/>
-        <TextBlock Margin="20,12,24,0" Text="{Binding Support, Source={StaticResource LocStrings}}">
+                <TextBlock Margin="20,12,0,0" Text="{Binding Resources.TimerSoundCopy, Source={StaticResource LocStrings}}"/>
+                <TextBlock Margin="20,12,24,0" Text="{Binding Resources.Support, Source={StaticResource LocStrings}}">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseLeftButtonUp">
         		        <cmd:EventToCommand Command="{Binding SupportCommand}"
@@ -45,7 +45,7 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </TextBlock>
-        <TextBlock Margin="20,40,24,0" Text="{Binding ViewMore, Source={StaticResource LocStrings}}"
+                <TextBlock Margin="20,40,24,0" Text="{Binding Resources.ViewMore, Source={StaticResource LocStrings}}"
                    Foreground="{StaticResource PhoneAccentBrush}" FontWeight="Bold">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseLeftButtonUp">

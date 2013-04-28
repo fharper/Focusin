@@ -41,13 +41,13 @@
             <Focusin:TimeSpanDisplay x:Name="Display" FontFamily="Segoe WP Black" FontSize="125"
                                      DigitWidth="75" Time="{Binding CurrentSession.Minutes}" Margin="0" HorizontalAlignment="Center"/>
 		    <StackPanel Margin="0,44,0,0" HorizontalAlignment="Center" Grid.Column="1">
-			    <TextBlock x:Name="WorkTextBlock" FontSize="30" Text="{Binding Work, Source={StaticResource LocStrings}}" />
-                <TextBlock x:Name="BreakTextBlock" FontSize="30" Text="{Binding Break, Source={StaticResource LocStrings}}" Opacity=".1"/>	
+			    <TextBlock x:Name="WorkTextBlock" FontSize="30" Text="{Binding Resources.Work, Source={StaticResource LocStrings}}" />
+                <TextBlock x:Name="BreakTextBlock" FontSize="30" Text="{Binding Resources.Break, Source={StaticResource LocStrings}}" Opacity=".1"/>	
 		    </StackPanel>
 		
             <ProgressBar x:Name="ProgressBar" Grid.Row="1" Value="100"  Background="White" Foreground="White" Style="{StaticResource TimerProgressBar}" Margin="0,-6,0,0" Width="360" HorizontalAlignment="Center" />
             <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="12,0,0,0">
-                <TextBlock x:Name="CurrentSessionTextBlock" Text="{Binding CurrentSession, Source={StaticResource LocStrings}}" FontSize="26.667" Margin="0,2,0,0" />
+                <TextBlock x:Name="CurrentSessionTextBlock" Text="{Binding Resources.CurrentSession, Source={StaticResource LocStrings}}" FontSize="26.667" Margin="0,2,0,0" />
                 <TextBlock x:Name="SessionNumberTextBlock" Text="{Binding CurrentSession.Number}" Margin="3,2,0,0" FontSize="26.667" />
             </StackPanel>
         </Grid>

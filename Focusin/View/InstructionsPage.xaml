@@ -19,18 +19,18 @@
 
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="FOCUSIN" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="{Binding Instructions, Source={StaticResource LocStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding Resources.Instructions, Source={StaticResource LocStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <ScrollViewer Grid.Row="1">
             <StackPanel>
-                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding InstructionsHeader, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding InstructionsListHeader, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList1, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList2, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList3, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList4, Source={StaticResource LocStrings}}" />
-                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding InstructionsList5, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding Resources.InstructionsHeader, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,12" TextWrapping="Wrap" Text="{Binding Resources.InstructionsListHeader, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding Resources.InstructionsList1, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding Resources.InstructionsList2, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding Resources.InstructionsList3, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding Resources.InstructionsList4, Source={StaticResource LocStrings}}" />
+                <TextBlock Margin="24,0" TextWrapping="Wrap" Text="{Binding Resources.InstructionsList5, Source={StaticResource LocStrings}}" />
             </StackPanel>          
     </ScrollViewer>
   </Grid>
